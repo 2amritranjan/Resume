@@ -2,6 +2,7 @@
 import React from 'react'
 import Link from 'next/link'
 import Navbar from './Components/Navbar'
+import Landing from './Components/Landing'
 
 const page = () => {
   return (
@@ -12,9 +13,12 @@ const page = () => {
       <div
       className='text-6xl font-bold w-1/2 h-32'>Amrit Ranjan</div>
       <div><img 
-      className='h-30 w-24 rounded shadow-xl'
-      src='/amrittt.jpg' alt='amrit'></img></div>
+      className='h-30 w-24 rounded shadow-xl hover:rotate-6'
+      src='/amrittt.jpg' alt='image'></img></div>
     </div>
+    <hr
+    className='border-t-4 border-slate-600 my-4'/>
+    <Landing/>
     </>
   )
 }
