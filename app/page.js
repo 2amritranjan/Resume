@@ -1,26 +1,25 @@
-'use client side'
+'use client'
 import React from 'react'
 import Link from 'next/link'
 import Navbar from './Components/Navbar'
 import Landing from './Components/Landing'
+import box from './Components/Box'
+
 
 const page = () => {
+  
   return (
     <>
     <Navbar title="Home Page" /> 
     <div 
-    className='h-40 p-5 flex justify-evenly m-2'>
-      <div
-      className='text-6xl font-bold w-1/2 h-32'>Amrit Ranjan</div>
-      <div><img 
-      className='h-30 w-24 rounded shadow-xl hover:rotate-6'
-      src='/amrittt.jpg' alt='image'></img></div>
-    </div>
-    <hr
-    className='border-t-4 border-slate-600 my-4'/>
-    <Landing/>
-    </>
+    className='h-screen bg-slate-900 text-sky-300 text-left'>
+      <h1 className='font-light text-[100px] text-left'>Amrit Ranjan<hr/></h1>
+      </div>
+      <div>
+        <box/>
+      </div>
+      <Landing/>
+      </>
   )
 }
-
 export default page

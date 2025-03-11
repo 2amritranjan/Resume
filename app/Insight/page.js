@@ -1,15 +1,15 @@
-"use client side"
 import React from 'react'
 import Navbar from '../Components/Navbar'
 import Landing from '../Components/Landing'
 
-const contacts = () => {
+function insight() {
   return (
     <>
-    <Navbar type/>
+    <Navbar/>
     <Landing/>
+    <div>insight</div>
     </>
   )
 }
 
-export default contacts
+export default insight
