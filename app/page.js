@@ -1,25 +1,21 @@
 'use client'
-import React from 'react'
-import Link from 'next/link'
-import Navbar from './Components/Navbar'
-import Landing from './Components/Landing'
-import box from './Components/Box'
+import React, { useState } from 'react'
+import Navbar from './Component/Navbar'
+import Card from'./Component/Card'
 
 
-const page = () => {
-  
+const Page = () => {
+
+
   return (
     <>
-    <Navbar title="Home Page" /> 
-    <div 
-    className='h-screen bg-slate-900 text-sky-300 text-left'>
-      <h1 className='font-light text-[100px] text-left'>Amrit Ranjan<hr/></h1>
-      </div>
-      <div>
-        <box/>
-      </div>
-      <Landing/>
-      </>
+      <div className='bg-black text-white w-full h-screen'>
+        <div className='font-bold text-3xl p-5 font-serif'>Amrit Ranjan</div>
+        <Navbar/>
+        <Card text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."/>
+        </div>
+    </>
   )
 }
-export default page
+
+export default Page;
